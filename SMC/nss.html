@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bca.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section style="font-size: 80%;">
+    <section class="firstSection" style="padding-bottom: 50px;">
+        <div class="box-main">
+            <div class="firstHalf">
+                <p class="text-big" style="text-shadow: 2px 2px rgb(128, 128, 248);">National Social Service</p>
+                <p class="text-small">In this world of 7 billion people we need to educate all of them. This is the
+                    future of an educated world and we are proud to say that the Future of Education is here</p>
+            </div>
+
+            <div class="thumbnail" style="border-radius: 500px;padding-left: 2%;height:80%;width:80%;">
+                <img src="img/collegelog.jpg" alt="college logo" class="imgFluid">
+            </div>
+       </div>
+    </section>
+   
+    <center>
+        <section class="section" id="about" style="width: 100%;height: auto;">
+            <div class="paras">
+                <div class="iambrpslides fade">
+                    <div class="numbertext">01 / 04</div>
+                        <img src="./img/republic day.jpg" id="u" style="height: 400px;width:800px;">
+                </div>
+                <div class="iambrpslides fade">
+                    <div class="numbertext">02 / 04</div>
+                    <img src="./img/tug of war (2).jpg" id="u" style="height: 400px;width:800px;">
+                </div>
+                <div class="iambrpslides fade">
+                    <div class="numbertext">04 / 04</div>
+                    <img src="./img/republic day.jpg" id="u" style="height: 400px;width:800px;">
+                </div>
+              </div>
+              <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span>  
+            </div>
+            <script>
+              var slideIndex = 0;
+              showSlides();
+              
+              function showSlides() {
+                  var i;
+                  var slides = document.getElementsByClassName("iambrpslides");
+                  var dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                     slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex> slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 2500); // This is for Changing image every 2.5 seconds
+              }
+              </script>
+              <br>
+                      
+                      <script type="text/javascript">
+                document.title="Home";
+              </script>
+            </div>
+       
+        </section>
+    
+   <section class="about">
+      <header>About NSS</header>
+      <p>NSS stands for national social service where all the candidates pledge to follow alll the rules and regulations for the betterment and development of the india.</p>
+   </section>
+    <section id="services-container" style="background-color: aqua;margin-top: 20px;box-shadow: 5px 5px yellowgreen;">
+           <div style="background-color: darkcyan;box-shadow: darkgoldenrod;">
+             <center><header style="font-size: 70px;align-content: center;color:blue;text-shadow:3px 3px red;">NSS STAFF</header></center>
+           </div>
+            <div id="services1" style="padding-left: 23%;">
+                
+                <div class="box1">
+                    
+                    <img src="img/premnath.jpg" alt="">
+                    <h2 class="h-secondary center">Asst Prof.Premnath</h2>
+                    <p class="center" style="font-size: x-large;">HOD OF COMPUTER SCIENCE DEPARTMENT</p>
+                </div> 
+            </div>
+            <div id="services" style="padding-left: 17%;">
+                <div class="box">
+                    <img src="img/pooja.jpg" alt="POOJA" style="height: 150px;width:150px;">
+                    <h2 class="h-secondary center">POOJA</h2>
+                    
+                </div>
+                <div class="box">
+                    <img src="img/megha.jpg" alt="MEGHA" style="height: 150px;width:150px;">
+                    <h2 class="h-secondary center">MEGHA</h2>
+                </div>
+                <div class="box">
+                    <img src="img/mahima.jpg" alt="MAHIMA" style="height: 150px;width:150px;">
+                    <h2 class="h-secondary center">MAHIMA</h2>
+                </div>
+            </div>
+        </section>
+    
+</center>
+
+<footer class="background">
+    <p class="text-footer">
+        Copyright &copy; 2027 - www.smcshirva.com - All rights reserved
+    </p>
+</section>
+</footer>
+</body>
+
+</html>

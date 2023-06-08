@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bca.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section style="font-size: 80%;">
+    <section class="firstSection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <p class="text-big" style="text-shadow: 2px 2px rgb(128, 128, 248);">ST Mary's College,Shirva</p>
+                <p class="text-small">ROVERS & RANGERS</p>
+            </div>
+
+            <div class="thumbnail" style="border-radius: 500px;padding-left: 2%;height:80%;width:80%;">
+                <img src="img/collegelog.jpg" alt="college logo" class="imgFluid">
+            </div>
+       </div>
+    </section>
+   
+    <center>
+        <section class="section" id="about" style="width: 100%;height: auto;">
+            <div class="paras">
+                <div class="iambrpslides fade">
+                    <div class="numbertext">01 / 04</div>
+                        <img src="./img/ncc.jpg" id="u" style="height: 250px;width:600px;">
+                </div>
+              
+                <div class="iambrpslides fade">
+                    <div class="numbertext">02 / 04</div>
+                    <img src="./img/ncc1.jpg" id="u" style="height: 250px;width:600px;">
+                </div>
+                <div class="iambrpslides fade">
+                    <div class="numbertext">04 / 04</div>
+                    <img src="./img/republic day.jpg" id="u" style="height: 250px;width:600px;">
+                </div>
+              </div>
+              <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+            </div>
+            <script>
+              var slideIndex = 0;
+              showSlides();
+              
+              function showSlides() {
+                  var i;
+                  var slides = document.getElementsByClassName("iambrpslides");
+                  var dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                     slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex> slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 2500); // This is for Changing image every 2.5 seconds
+              }
+              </script>
+              <br>
+                      
+                      <script type="text/javascript">
+                document.title="Home";
+              </script>
+            </div>
+       
+        </section>
+    
+   <section class="about">
+      <header>About ROVERS</header>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis adipisci vero illo voluptatum quidem, nam ipsam soluta qui?</p>
+   </section>
+    <section id="services-container" style="background-color: aqua;margin-top: 20px;box-shadow: 5px 5px yellowgreen;">
+           <div style="background-color: darkcyan;box-shadow: darkgoldenrod;">
+             <center><header style="font-size: 70px;align-content: center;color:rgb(196, 224, 198);text-shadow:3px 3px red;">ROVERS & RANGERS STAFF</header></center>
+           </div>
+            <div id="services1" style="padding-left: 33%;">
+                <div class="box1">
+                    <img src="img/sushma.jpg" alt="">
+                    <h2 class="h-secondary center">Asst Prof.Sushma</h2>
+                    <p class="center" style="font-size: x-large;">Senior officer</p>
+                </div> 
+            </div>
+            <div id="services" style="padding-left: 33%;">
+                <div class="box">
+                    <img src="img/prakash.jpg" alt="JUO Pravitha">
+                    <h2 class="h-secondary center">Mr.Prakash</h2>
+                </div>
+                <div class="box">
+                    <img src="img/sneha.jpg" alt="SNEHA">
+                    <h2 class="h-secondary center">SNEHA</h2>
+                </div>
+            </div>
+        </section>
+    
+</center>
+<footer class="background">
+    <p class="text-footer">
+        Copyright &copy; 2027 - www.smcshirva.com - All rights reserved
+    </p>
+</section>
+</footer>
+</body>
+
+</html>

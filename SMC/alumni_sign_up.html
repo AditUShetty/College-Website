@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/alumni.css">
+</head>
+<body>
+
+
+<div class="row"  style="padding:100px 300px;">
+  <div class="col-50">
+    <div class="container" >
+      <form  action="alumni_sign_up.php" method="post" style="padding: 25px;">
+      
+        <div class="row" >
+          <div class="col-25">
+            <h3 style="text-align: center;margin:20px 10px;font-family: lato;">MEMBERSHIP FORM</h3>
+          
+
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" oninvalid="alert('you must enter your name in the form')" id="fname" name="name" placeholder="John M. Doe" required>
+            <label for="regno"><i class="fa fa-user"></i> Register no</label>
+            <input type="number" oninvalid="alert('you must enter ur regno in the form')" id="regno" name="regno" placeholder="186431922" required>
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" oninvalid="alert('you must enter ur email in the form')" id="email" name="email" placeholder="john@example.com" required>
+            <label for="jdate"><i class="fa fa-user"></i> date of joining</label>
+            <input type="date" oninvalid="alert('you must enter DOJ in the form')" id="jdate" name="jdate" placeholder="12/3/2010" required>
+            <label for="ldate"><i class="fa fa-user"></i> date of leaving</label>
+            <input type="date" oninvalid="alert('you must enter DOJ fields in the form')" id="ldate" name="ldate" placeholder="12/3/2013" required>
+            <input type="hidden" value="<?php echo 'OID'.rand(100,1000);?>" name="orderid">
+            <input type="hidden" value="<?php echo 1;?>" name="amount">
+            <label for="mobile"><i class="fa fa-mobile"></i> Mobile</label>
+            <input type="number" min="6666666666" max="9999999999" oninvalid="alert('you must enter valid contact/mobile no in the form')" id="mobile" name="mobile" placeholder="7645738292" required>
+            <label for="adr"><i class="fa fa-address-card-o"></i>Permanent Address</label>
+            <input type="text" oninvalid="alert('you must enter your address in the form')" id="adr" name="address" placeholder="542 W. 15th Street" required>
+            <label for="password1"><i class="fa fa-password"></i>password</label>
+            <input type="password" oninvalid="alert('you must enter password in the form')" id="password1" name="password1" placeholder="$##e#32E" required>
+            <label for="password2"><i class="fa fa-password"></i>Re_type_password</label>
+            <input type="password" oninvalid="alert('you must re-type the password for confirmation fields in the form')" id="password2" name="password2" placeholder="$##e#32E" required>
+            <div>Already a Member? <a href="alumni_sign_in.html">SIGN IN</a></div>
+        </div>
+       
+        <input type="submit"  value="Pay Rs.1000" class="btn">
+      </form>
+    </div>
+  </div>
+ 
+</div>
+
+</body>
+</html>

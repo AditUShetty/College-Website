@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <section class="contact" id="contact" style="height: auto;">
+        <h1 class="text-center">Students_progress</h1>
+        <div class="form">
+           
+            <form action="graph.php" method="POST" enctype="multipart/form-data">
+            <input class="form-input" style="width:500px;" type="text"  oninvalid="alert('you must enter your name in the form')" name="name" id="name" placeholder="Enter Your name" required><br>
+            <label>UPLOAD YOUR CURRENT PHOTO</label><br>
+            <input class="form-input" style="width:500px;" type="file"  oninvalid="alert('you must upload ur photo in the form')" name="uploadfile" value="" required><br>
+            <input class="form-input" style="width:500px;" type="number"  oninvalid="alert('you must enter your regno in the form')" name="regno" id="regno" placeholder="Enter Your Regno" required><br>
+            <input class="form-input" style="width:500px;" type="number" min="6666666666" max="9999999999" oninvalid="alert('you must enter valid phone no in the form')" name="phone" id="phone" placeholder="Enter Your Phone" required><br>
+            <input class="form-input" style="width:500px;" type="email"  oninvalid="alert('you must enter your email in the form')" name="email" id="email" placeholder="Enter Your email" required><br>
+            <div class="form-input">GENDER</div>
+            <label for="male">MALE</label>
+            <input style="font-size: 19px;margin: 28px;" type="radio"  name="radio1" value="MALE"><br>
+            <label for="female">FEMALE</label>
+            <input style="font-size: 19px;margin: 13px;" type="radio"  name="radio1" value="FEMALE">
+            <div class="form-input">Select Course</div><br><br>
+            <label>BCA</label>
+            <input style="padding: 12%;font-size: 19px;margin: 13px;" type="radio"  oninvalid="alert('plz select a course in the form')" name="radio2" value="bca" required><br>
+            <label>BCOM</label>
+            <input style="padding: 12%;font-size: 19px;margin: 13px;" type="radio" name="radio2" value="bcom" required><br>
+            <label>BBA</label>
+            <input style="padding: 12%;font-size: 19px;margin: 13px;" type="radio" name="radio2" value="bba" required><br>
+            <label>BA</label>
+            <input style="padding: 12%;font-size: 19px;margin: 13px;" type="radio" name="radio2" value="ba" required><br>
+            <div class="form-input">What are u going to do after Graduation</div>
+            <label>HIGHER EDUCATION</label>
+            <input style="padding: 12%;font-size: 19px;margin: 13px;" type="radio"  oninvalid="alert('plz select a progress option in the form')" name="radio3" value="HI_EDU" required><br>
+            <label>JOB</label>
+            <input style="padding: 12%;font-size: 19px;margin: 13px;" type="radio"  name="radio3" value="JOB" required><br>
+            <label>NOTHING</label>
+            <input style="padding: 12%;font-size: 19px;margin: 13px;" style="width:500px;" type="radio" name="radio3" value="NOTHING" required><br><br><br>
+            <button type="submit" class="btn btn-sm btn-dark" name="upload">Submit</button>
+            <button type="reset" class="btn btn-sm btn-dark">Reset</button>
+            </form>
+            </div>
+            </section>
+        </center>
+    <footer class="background">
+        <p class="text-footer">
+            Copyright &copy; 2027 - www.iEducate.com - All rights reserved
+        </p>
+    </footer>
+</body>
+</html>

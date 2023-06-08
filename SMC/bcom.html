@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bca.css">
+  
+    <title>Document</title>
+</head>
+<body>
+    
+    
+  <section style="font-size: 80%;">
+    <div class="container1">
+        <center>
+            <header style="font-size: 70px;">BCOM</header>
+        </center>
+        <center>
+            <header style="font-size: 30px;">Bachelor Of Computer Applications</header>
+        </center>
+    </div>
+    <center>
+        <section class="section" id="about" style="width: 100%;height: auto;">
+            <div class="paras"  >
+                <div class="iambrpslides fade">
+                    <div class="numbertext">01 / 03</div>
+                        <img src="./img/picnic.jpg" id="u">
+                </div>
+              
+                <div class="iambrpslides fade">
+                    <div class="numbertext">02 / 03</div>
+                    <img src="./img/college-logo.jpg" id="u">
+                </div>
+              
+                <div class="iambrpslides fade">
+                    <div class="numbertext">03 / 03</div>
+                    <img src="./img/bca lab.jpg" id="u">
+                </div>
+              
+            </div>
+              
+              
+            <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+            </div>
+              
+              <script>
+              var slideIndex = 0;
+              showSlides();
+              
+              function showSlides() {
+                  var i;
+                  var slides = document.getElementsByClassName("iambrpslides");
+                  var dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                     slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex> slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 2500); // This is for Changing image every 2.5 seconds
+              }
+              </script>
+              <br>
+                      
+                      <script type="text/javascript">
+                document.title="Home";
+              </script>
+            </div>
+       
+        </section>
+    
+   <section class="about">
+      <header>About BCOM</header>
+      <p>BCOM stands for Bachelor Of Commerce Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est placeat illum explicabo blanditiis voluptatum similique molestias quod vel, facilis sit! Aliquid a fuga dignissimos voluptatum, nobis in sed labore tempore. Voluptatum labore dolor nisi?</p>
+   </section>
+  
+   <section class="Scope">
+    <header>Scope Of BCOM</header>
+    <ul>
+        <li>Chatered Accountant</li>
+        <li>Banking</li>
+        <li>Teacher</li>
+        <li>MCOM</li>
+    </ul>
+    </section>
+    
+        <section id="services-container" style="background-color: aqua;margin-top: 20px;box-shadow: 5px 5px yellowgreen;">
+           <div style="background-color: darkcyan;box-shadow: darkgoldenrod;">
+             <center><header style="font-size: 70px;align-content: center;color:blue;text-shadow:3px 3px red;">BCOM STAFF</header></center>
+           </div>
+            <div id="services1" style="padding-left: 23%;">
+                
+                <div class="box1">
+                    
+                    <img src="img/lt pk.jpg" alt="">
+                    <h2 class="h-secondary center">Asst Prof.Praveen Kumar</h2>
+                    <p class="center" style="font-size: x-large;">HOD OF COMPUTER SCIENCE DEPARTMENT</p>
+                </div> 
+            </div>
+            <div id="services" >
+                
+                <div class="box">
+                    <img src="img/prakash.jpg" alt="Asst Prof.Prakash">
+                    <h2 class="h-secondary center">Asst Prof.Prakash</h2>
+                </div>
+                <div class="box">
+                    <img src="img/sushma.jpg" alt="Asst Prof.Sushma">
+                    <h2 class="h-secondary center">Asst Prof.Sushma</h2>
+                    
+                </div>
+                <div class="box">
+                    <img src="img/divyashree.jpg" alt="Asst Prof.DivyaShree">
+                    <h2 class="h-secondary center">Asst Prof.DivyaShree</h2>
+                </div>
+            </div>
+        </section>
+    
+</center>
+<section style="box-shadow:4px 4px 4px 4px orchid;">
+    <div style="align-content: center;">
+     <header style="padding-left: 38%;align-content:center;font-size: 60px;background-color: rgb(230, 141, 109);color:palegreen;text-shadow: 3px 2px green;">Achievements</header>
+    </div>   
+    <div style="background-color:rgb(224, 199, 152);display: flex;flex-direction: row;">
+        
+        <div style="margin:20px;background-color:  rgb(236, 234, 229);margin-left: 27%;border-radius: 20px;">
+            <img src="img/banner.jpg" style="height: 250px;width: 250px;">
+        </div>
+        <div style="margin:20px;background-color: rgb(236, 234, 229);margin-left: 2%;border-radius: 20px;">
+            <img src="img/ach2.jpg" style="height: 250px;width: 250px;">      
+        </div>
+    </div>
+</section>
+<footer class="background">
+    <p class="text-footer">
+        Copyright &copy; 2027 - www.smcshirva.com - All rights reserved
+    </p>
+</footer>
+</body>
+
+</html>
